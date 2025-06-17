@@ -7,8 +7,8 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
 }
 .container{
     display: flex;
@@ -32,23 +32,167 @@ header .menu ul{
 }
 header .menu ul li{
     margin: 10px 30px 10px 30px;
-    list-style: nome;
+    list-style: none; 
 }
 header .menu ul li a, .login a{
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
-section .line01{
+section .line01,
+section .line02,
+section .line03,
+section .line04{
     display: flex;
 }
 section .line01 .box-left, .line01 .box-right{
     width: 40rem;
     margin-top: 4rem;
 }
-section .line01 .box-left h5{
+section .line01 .box-left h5,
+section .line03 .box-left h5{
     font-size: calc(1rem + .3vw);
     background: -webkit-linear-gradient(90deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+section .line01 .box-left h1{
+    font-size: calc(1.625rem + 3.5vw);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+section .line01 .box-left h1 span,
+section .line01 .box-left h2 span{
+    background: -webkit-linear-gradient(90deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section .line01 .box-left p,
+section .line03 .box-left p,
+section .line04 .box-left p,
+footer .row .col p{
+    color: rgb(108,117,125);
+}
+section .line01 .box-left button,
+section .row .col-left button,
+section .line04 .box-left button{
+    width: 15rem;
+    height: 4rem;
+    background: -webkit-linear-gradient(90deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    color: #fff;
+}
+section .line01 .box-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+section .line02{
+    justify-content: space-between;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    height: 10rem;
+    background: -webkit-linear-gradient(45deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+}
+section .line02 .col,
+section .line02 .col-m{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;    
+}
+section .line02 img{
+    width: 3rem;
+}
+section .line02 .col-m img{
+    width: 8rem;
+}
+section .row{
+    display: flex;
+    width: 80rem;
+    justify-content: end;
+}
+section .row .col-left{
+    width: 40%;
+    height: 30rem;
+}
+section .row .col-left h5,
+section .line03 .box-left h5,
+section .line04 .boxleft h5{
+    font-size: calc(1.275rem + .3vw);
+    background: -webkit-linear-gradient(45deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section .row .col-left h2,
+section .line03 .box-left h2,
+section .line04 .box-left h2{
+    margin-top: 1rem;
+    font-size: calc(1.625rem + .8vw)
+}
+section .row .col-left h2 span,
+section .line03 .box-left h2 span,
+section .line03 .benefit h3 span,
+section .line03 .benefit p span,
+section .line04 .benefit h2 span{
+    background: -webkit-linear-gradient(45deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section .row .col{
+    width: 30%;
+    height: 30rem;
+    background-color: #151515;
+    border: 1px solid #2e2e2e;
+    padding: 4rem 3rem;
+}
+section .row .col:hover{
+    background-color: #2e2e2e;
+}
+section .row .col .p,
+section .row .col h2{
+    margin-bottom: 2rem;
+}
+section .row .col .botao{
+    display: flex;
+    justify-content: end;
+}
+section .row .col .botao button{
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    font-size: 3rem;
+}
+section .row .col:hover .botao button,
+section .row .col:hover .botao button p{
+    background: -webkit-linear-gradient(90deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+    color: #fff;
+}
+section .line03{
+    margin-top: 7rem;
+}
+section .line03 .box-left{
+    padding-right: 3rem;
+}
+section .line03 .box-left p,
+section .line04 .box-left p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+section .line03 .benefit{
+    display: flex;
+    justify-content: space-between;
+}
+section .line03 .benefit h3{
+    font-size: calc(1.625rem + .2vw);
+}
+section .line04,
+section .line05{
+    margin-top: 6rem;
 }
