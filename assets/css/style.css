@@ -34,7 +34,8 @@ header .menu ul li{
     margin: 10px 30px 10px 30px;
     list-style: none; 
 }
-header .menu ul li a, .login a{
+header .menu ul li a, .login a,
+section .line05 .row .col a{
     text-decoration: none;
     color: #fff;
 }
@@ -48,8 +49,7 @@ section .line01 .box-left, .line01 .box-right{
     width: 40rem;
     margin-top: 4rem;
 }
-section .line01 .box-left h5,
-section .line03 .box-left h5{
+section .line01 .box-left h5{
     font-size: calc(1rem + .3vw);
     background: -webkit-linear-gradient(90deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
     background-clip: border-box;
@@ -72,7 +72,7 @@ section .line01 .box-left p,
 section .line03 .box-left p,
 section .line04 .box-left p,
 footer .row .col p{
-    color: rgb(108,117,125);
+    color: rgb(108, 117, 125);
 }
 section .line01 .box-left button,
 section .row .col-left button,
@@ -111,7 +111,8 @@ section .line02 img{
 section .line02 .col-m img{
     width: 8rem;
 }
-section .row{
+section .row,
+footer .row{
     display: flex;
     width: 80rem;
     justify-content: end;
@@ -122,7 +123,7 @@ section .row .col-left{
 }
 section .row .col-left h5,
 section .line03 .box-left h5,
-section .line04 .boxleft h5{
+section .line04 .box-left h5{
     font-size: calc(1.275rem + .3vw);
     background: -webkit-linear-gradient(45deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
     background-clip: border-box;
@@ -133,19 +134,20 @@ section .row .col-left h2,
 section .line03 .box-left h2,
 section .line04 .box-left h2{
     margin-top: 1rem;
-    font-size: calc(1.625rem + .8vw)
+    font-size: calc(1.625rem + .8vw);
 }
-section .row .col-left h2 span,
+section .row .col-left h2 span, 
 section .line03 .box-left h2 span,
 section .line03 .benefit h3 span,
 section .line03 .benefit p span,
-section .line04 .benefit h2 span{
+section .line04 .box-left h2 span{
     background: -webkit-linear-gradient(45deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
     background-clip: border-box;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
 }
-section .row .col{
+section .row .col,
+footer .row .col{
     width: 30%;
     height: 30rem;
     background-color: #151515;
@@ -155,22 +157,22 @@ section .row .col{
 section .row .col:hover{
     background-color: #2e2e2e;
 }
-section .row .col .p,
+section .row .col p,
 section .row .col h2{
     margin-bottom: 2rem;
 }
-section .row .col .botao{
+section .row .col .button{
     display: flex;
-    justify-content: end;
+    justify-content: end; 
 }
-section .row .col .botao button{
+section .row .col .button button{
     width: 4rem;
     height: 4rem;
     border: none;
-    font-size: 3rem;
+    font-size: 3rem;    
 }
-section .row .col:hover .botao button,
-section .row .col:hover .botao button p{
+section .row .col:hover .button button,
+section .row .col:hover .button button p{
     background: -webkit-linear-gradient(90deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
     color: #fff;
 }
@@ -184,15 +186,190 @@ section .line03 .box-left p,
 section .line04 .box-left p{
     margin-top: 1rem;
     margin-bottom: 2rem;
-}
+} 
 section .line03 .benefit{
     display: flex;
     justify-content: space-between;
 }
 section .line03 .benefit h3{
-    font-size: calc(1.625rem + .2vw);
+    font-size: calc(1.625rem + .2vw)
 }
 section .line04,
 section .line05{
     margin-top: 6rem;
+}
+section .line05 .row{
+    width: 80rem;
+    justify-content: center;
+}
+section .line05 .row .col{
+    width: 33.3%;
+    height: auto;
+    background-color: #000;
+}
+section .line05 .row .col:hover{
+    background-color: #2e2e2e;
+}
+section .line05 .row .col button{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+}
+section .line05 .row .col button span{
+    font-size: 2rem;
+}
+section .line05 .row .col h2{
+    margin-top: 2rem;
+}
+section .line05 .row .col p{
+    color: rgb(108, 117, 125);
+}
+section .line06{
+    margin-top: 7rem;
+    background: rgba(5,137,220,1);
+    background: linear-gradient(45deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+}
+section .line06 .row{
+    display: block;
+    padding: 4rem;
+}
+section .line06 .row h2{
+    margin-top: 1.5rem;
+    font-size: calc(1.625rem + 2.5vw);
+}
+section .line06 .slide{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 4rem;
+}
+section .line06 .swiper-slide{
+    width: 350px !important;
+    margin: 0 !important;
+}
+section .line06 .slide .card{
+    width: 20rem;
+    height: 20rem;
+    background-color: #151515;
+    padding: 3rem 2rem;
+}
+section .line06 .slide .card img{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+section .line06 .slide .card p{
+    color: rgb(108, 117, 125);
+    font-size: 1rem;
+}
+section .line06 .slide .card .text{
+    width: auto;
+    height: 70%;
+}
+section .line06 .slide .card .footer{
+    display: flex;
+    width: auto;
+    height: 30%;
+    margin-top: 1rem;
+}
+section .line06 .slide .card .footer p{
+    color: #fff;
+    font-size: 1rem;
+}
+section .line06 .slide .card .footer p span{
+    font-size: .8rem;
+    color: rgb(108, 117, 125);
+}
+section .line07 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+    background: rgba(5, 137, 220, 1);
+    background: linear-gradient(45deg, rgba(5, 137, 220, 1) 0%, rgba(2, 198, 210, 1) 100%);
+    width: 80rem;
+    height: 22rem;
+}
+section .line07 .row h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: calc(1.625rem + 2.5vw);
+}
+section .line07 .row button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+section .line07 .row button p{
+    background: -webkit-linear-gradient(90deg, rgba(5,137,220,1)0%, rgba(2,198,210,1)100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer .row .col{
+    height: auto;
+    background-color: #000;
+    border: none;
+}
+footer .row .col:hover{
+    background-color: #000;
+}
+footer .row .col span{
+    font-size: 2rem;
+    margin-left: .8rem;
+}
+footer .row .col p{
+    margin-top: .5rem;
+    margin-left: .8rem;
+    margin-bottom: 2rem;
+}
+footer .row .col li{
+    list-style: none;
+    margin-top: 1rem;
+}
+footer .row .col h3{
+    color: rgb(108, 117, 125);
+    font-size: 2rem;
+}
+footer .row .col h2{
+    color: rgb(108, 117, 125);
+    margin-top: 1.6rem;
+}
+footer .row .col a{
+    text-decoration: none;
+    color: rgb(108, 117, 125);
+}
+footer .row .col label{
+    display: flex;
+    margin: 1rem 0;
+}
+footer .row .col input{
+    height: 2rem;
+    padding-left: 1rem;
+    border: none;
+}
+footer .row .col button{
+    width: 6rem;
+    border: none;
+    background: rgba(5, 137, 220, 1);
+    background: linear-gradient(45deg, rgba(5, 137, 220, 1) 0%, rgba(2, 198, 210, 1) 100%);
+}
+footer .row .col .end{
+    margin-left: 0;
+}
+footer .copyright{
+    width: 80rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .copyright p{
+    color: rgb(108, 117, 125);
 }
